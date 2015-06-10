@@ -1,0 +1,15 @@
+{
+    "mysql": {
+        "database": "tracker1",
+        "user": "root",
+        "password": "admin123"
+    },
+    "server": {
+        "port": 5251
+    },
+    "app": {
+        "layouts": true,
+        "themes": true,
+        "languages": true
+    }
+}

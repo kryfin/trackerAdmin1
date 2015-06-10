@@ -1,0 +1,43 @@
+
+<hr />
+
+<div id="editview2" class="span5">
+  
+ <form action="/view9/data" method="post" accept-charset="utf-8" class="form-horizontal" role="form">
+
+
+
+
+   
+
+
+<div class="form-group">
+   
+   
+        <div class="col-sm-6">
+      <input type="hidden" class="form-control" name="tracker_id2" id="text" placeholder="Enter tracker Name" value="{{tid}}">
+     
+    </div>
+  </div>
+<div class="form-group">
+   
+   
+    <label class="control-label col-sm-2" for="text">tracker location:</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" name="tracker_loc" id="text" placeholder="Enter location" value=" ">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="text">tracker history:</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" name="tracker_his" id="text" value="">
+    </div>
+  </div>
+
+ 
+  </div>
+    <input type="submit" value="save" class="btn btn-primary"/>
+   <input type="hidden" name="_csrf" value="{{csrf}}" />
+
+</div>

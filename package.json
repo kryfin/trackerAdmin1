@@ -1,0 +1,88 @@
+{
+  "name": "express-admin",
+  "version": "1.2.6",
+  "description": "MySql, MariaDB, SQLite and PostgreSQL database admin built with Express and Bootstrap.",
+  "keywords": [
+    "mysql",
+    "mariadb",
+    "sqlite",
+    "postgresql",
+    "database",
+    "admin",
+    "express",
+    "bootstrap"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/simov/express-admin",
+  "author": {
+    "name": "simo",
+    "email": "simeonvelichkov@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/simov/express-admin.git"
+  },
+  "dependencies": {
+    "express": "4.4.4",
+    "morgan": "1.1.1",
+    "body-parser": "1.4.3",
+    "connect-multiparty": "1.1.0",
+    "cookie-parser": "1.3.1",
+    "express-session": "1.5.1",
+    "csurf": "1.2.2",
+    "method-override": "2.0.2",
+    "serve-static": "1.2.3",
+    "consolidate": "0.9.1",
+    "hogan.js": "3.0.2",
+    "mysql": "2.2.0",
+    "mysql-validator": "0.1.6",
+    "async": "0.9.0",
+    "pwd": "0.0.3",
+    "commander": "1.3.2",
+    "colors": "0.6.1",
+    "slugify": "0.1.0",
+    "sr-pagination": "1.0.1",
+    "deep-copy": "1.0.0",
+    "xsql": "1.0.1",
+    "moment": "2.8.3",
+    "express-admin-static": "2.2.2"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*",
+    "supertest": "*",
+    "recursive-fs": "*"
+  },
+  "main": "./app",
+  "bin": {
+    "admin": "./bin/admin"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "gitHead": "09a414d817e502e4f4919641f0d44e7f1edbe451",
+  "bugs": {
+    "url": "https://github.com/simov/express-admin/issues"
+  },
+  "_id": "express-admin@1.2.6",
+  "_shasum": "4a69496d80257361a15a0f06095097097e4c97cf",
+  "_from": "express-admin@*",
+  "_npmVersion": "1.4.21",
+  "_npmUser": {
+    "name": "simov",
+    "email": "simeonvelichkov@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "simov",
+      "email": "simeonvelichkov@gmail.com"
+    }
+  ],
+  "dist": {
+    "shasum": "4a69496d80257361a15a0f06095097097e4c97cf",
+    "tarball": "http://registry.npmjs.org/express-admin/-/express-admin-1.2.6.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/express-admin/-/express-admin-1.2.6.tgz",
+  "readme": "ERROR: No README data found!"
+}

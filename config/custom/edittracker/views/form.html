@@ -1,0 +1,64 @@
+
+<hr />
+
+<div id="editview1" class="span5">
+  
+ <form action="/viewEditTracker/data" method="post" accept-charset="utf-8" class="form-horizontal" role="form">
+
+
+<div class="form-group">
+
+
+   
+
+
+<div class="form-group">
+   
+   
+        <div class="col-sm-6">
+      <input type="hidden" class="form-control" name="account_id" id="text" placeholder="Enter Account Name" value="{{aid}}">
+     
+    </div>
+  </div>
+
+
+<div class="form-group">
+   
+  
+        <div class="col-sm-6">
+      <input type="hidden" class="form-control" name="tracker_id" id="text" placeholder="Enter Account Name" value="{{tid}}">
+     
+    </div>
+  </div>
+
+
+
+
+
+<div class="form-group">
+    <label class="control-label col-sm-2" for="text">Tracker IMEI:</label>
+    <div class="col-sm-6">
+      <input type="number" class="form-control" name="tracker_imei" id="text" value="">
+    </div>
+  </div>
+
+
+
+<div class="container">
+   <label class="control-label col-sm-2" for="text">Purchase date:</label>
+    <div class="row">
+        <div class='col-sm-6'>
+            <input type='text' class="form-control" name="tracker_date" id='datetimepicker4' />
+        </div>
+        <script type="text/javascript" charset="utf-8">
+            $(function () {
+                $('#datetimepicker4').datetimepicker();
+            });
+        </script>
+    </div>
+</div>
+  </div>
+    <input type="submit" value="save" class="btn btn-primary"/>
+   <input type="hidden" name="_csrf" value="{{csrf}}" />
+
+</div>

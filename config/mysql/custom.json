@@ -1,0 +1,260 @@
+{
+
+
+
+
+
+    "editors": {
+        "app": {
+            "path": "/expressnode/work/trackerAdmin1/config/custom/editors/app.js",
+            "slug": "upload"
+        },
+        "public": {
+            "external": {
+                "js": [
+                    "//cdn.ckeditor.com/4.4.2/standard/ckeditor.js"
+                ]
+            },
+            "local": {
+                "path": "/expressnode/work/trackerAdmin1/config/custom/editors",
+                "js": [
+                    "/jslib/tinymce/js/tinymce/tinymce.min.js",
+                    "/jslib/tinymce/js/tinymce/jquery.tinymce.min.js",
+                    "/editors.js"
+                ]
+            }
+        }
+    },
+  
+
+  "view1": {
+        "app": {
+            "path"  : "E:/expressnode/work/trackerAdmin1/config/custom/app4/app.js",
+            "slug": "view1",
+            "verbose": "help",
+            "mainview": {
+                "show": false
+            }
+        },
+        "public": {
+            "local": {
+                "path": "/expressnode/work/trackerAdmin1/config/custom/app4/public",
+                "css": [
+                    "/css/global.css"
+                ],
+                "js": [
+                    "/js/global.js"
+                ]
+            }
+        }
+    },
+   
+
+   
+    "view2": {
+        "app": {
+            "path"  : "/expressnode/work/trackerAdmin1/config/custom/highcharts1/app.js",
+            "slug": "view2",
+            "verbose": "person records",
+            "mainview": {
+                "show": true
+            }
+        }
+    },
+"view3": {
+        "app": {
+            "path"  : "/expressnode/work/trackerAdmin1/config/custom/highcharts2/app.js",
+            "slug": "view3",
+            "verbose": "add new customer+",
+            "mainview": {
+                "show": true
+            }
+        }
+    },
+    "view4": {
+        "app": {
+            "path"  : "/expressnode/work/trackerAdmin1/config/custom/highcharts3/app.js",
+            "slug": "view4",
+            "verbose": "account records",
+            "mainview": {
+                "show": true
+            }
+
+        
+               
+        }
+    },
+     "view5": {
+        "app": {
+            "path"  : "/expressnode/work/trackerAdmin1/config/custom/highcharts4/app.js",
+            "slug": "view5",
+            "verbose": "Tracker records",
+            "mainview": {
+                "show": true
+            }
+        }
+    },
+     "view6": {
+        "app": {
+            "path"  : "/expressnode/work/trackerAdmin1/config/custom/highcharts5/app.js",
+            "slug": "view6",
+            "verbose": "Tracker Data Records",
+            "mainview": {
+                "show": true
+            }
+        }
+    },
+    
+     "view7": {
+        "app": {
+            "path"  : "/expressnode/work/trackerAdmin1/config/custom/addaccount/app.js",
+            "slug": "view7",
+            "verbose": "add account",
+            "mainview": {
+                "show": true
+            }
+        }
+    },
+      "view8": {
+        "app": {
+            "path"  : "/expressnode/work/trackerAdmin1/config/custom/addtracker/app.js",
+            "slug": "view8",
+            "verbose": "add tracker",
+            "mainview": {
+                "show": true
+            }
+        }
+    },
+        "view9": {
+        "app": {
+            "path"  : "/expressnode/work/trackerAdmin1/config/custom/addtrackerdata/app.js",
+            "slug": "view9",
+            "verbose": "add data",
+            "mainview": {
+                "show": true
+            }
+        }
+    },
+    
+"view10": {
+        "app": {
+            "path"  : "/expressnode/work/trackerAdmin1/config/custom/addxperson/app.js",
+            "slug": "view10",
+            "verbose": "add person",
+            "mainview": {
+                "show": true
+            }
+        }
+    },
+    
+
+    "viewDeletePerson": {
+        "app": {
+            "path"  : "/expressnode/work/trackerAdmin1/config/custom/deleteperson/app.js",
+            "slug": "viewDeletePerson",
+            "verbose": "delete person",
+            "mainview": {
+                "show": true
+            }
+        }
+    },
+
+      "viewDeleteAccount": {
+        "app": {
+            "path"  : "/expressnode/work/trackerAdmin1/config/custom/deleteaccount/app.js",
+            "slug": "viewDeleteAccount",
+            "verbose": "delete account",
+            "mainview": {
+                "show": true
+            }
+        }
+    },
+        "viewDeleteTracker": {
+        "app": {
+            "path"  : "/expressnode/work/trackerAdmin1/config/custom/deletetracker/app.js",
+            "slug": "viewDeleteTracker",
+            "verbose": "delete tracker",
+            "mainview": {
+                "show": true
+            }
+        }
+    },
+  "viewDeleteData": {
+        "app": {
+            "path"  : "/expressnode/work/trackerAdmin1/config/custom/deletedata/app.js",
+            "slug": "viewDeleteData",
+            "verbose": "delete data1",
+            "mainview": {
+                "show": true
+            }
+        }
+    },
+    "viewEditPerson": {
+        "app": {
+            "path"  : "/expressnode/work/trackerAdmin1/config/custom/editperson/app.js",
+            "slug": "viewEditPerson",
+            "verbose": "edit person",
+            "mainview": {
+                "show": true
+            }
+        }
+    },
+       "viewEditAccount": {
+        "app": {
+            "path"  : "/expressnode/work/trackerAdmin1/config/custom/editaccount/app.js",
+            "slug": "viewEditAccount",
+            "verbose": "edit account",
+            "mainview": {
+                "show": true
+            }
+        }
+    },
+
+
+     "viewEditTracker": {
+        "app": {
+            "path"  : "/expressnode/work/trackerAdmin1/config/custom/edittracker/app.js",
+            "slug": "viewEditTracker",
+            "verbose": "edit tracker",
+            "mainview": {
+                "show": true
+            }
+        }
+    },
+
+
+     "viewEditData": {
+        "app": {
+            "path"  : "/expressnode/work/trackerAdmin1/config/custom/editdata/app.js",
+            "slug": "viewEditData",
+            "verbose": "edit data",
+            "mainview": {
+                "show": true
+            }
+        }
+    },
+    
+    
+
+    "static": {
+        "public": {
+            "local": {
+                "path": "E:/expressnode/work/trackerAdmin1/config/custom/static1",
+                "js": [
+                    "/mtm-tags.js",
+                    "/theme.js",
+                    "/binary.js"
+                ]
+            }
+        }
+    },
+
+    "events": {
+        "events": "/expressnode/work/trackerAdmin1/config/custom/events/events.js"
+    }
+
+
+
+
+
+}

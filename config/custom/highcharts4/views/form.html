@@ -1,0 +1,102 @@
+
+
+
+
+<style type="text/css">
+    .form-horizontal.well .control-group { margin: 0; }
+    #readme { float: none; margin: 0 auto; }
+</style>
+
+<!-- this library is loaded locally only for this view -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/highcharts/3.0.2/highcharts.js" type="text/javascript" charset="utf-8"></script>
+
+
+
+<!-- Le View -->
+<h2>Tracker Informations</h2>
+
+<div style="margin-bottom: 40px;" >
+ <ul class="nav navbar-nav">
+            
+              <a href="/view8/{{account_id}}">add tracker</a>
+            
+            
+ <li>
+        </ul>
+
+</div>
+
+
+
+
+<div id="template-table">
+<table class="table table-bordered table-striped table-hover x-table">
+    <tbody>
+        {{#data1}}
+
+   
+        <tr>
+         
+ <td width="70">
+
+                <a href="/viewDeleteTracker/{{tracker_id}},{{account_id}}" style="color:red;">X  </a>
+                <a href="/viewEditTracker/{{tracker_id}},{{account_id}}" style="color:green;"> ✎</a>
+            </td>
+
+            <td>
+               <a href="/view6/{{tracker_id}}">{{tracker_id}}</a>
+                
+            </td>
+            <td>
+                {{tracker_imei}}
+            </td>
+             <td>
+                {{purchasing_date}}
+            </td>
+            <td>
+                {{account_id}}
+            </td>
+        </tr>
+        {{/data1}}
+    </tbody>
+
+
+</table>
+
+</div>
+
+
+
+
+
+
+
+<!-- <section id="chart">
+    <script type="text/javascript" charset="utf-8">
+        $(function () {
+            // {{{chart data is unescaped}}}
+            var settings = JSON.parse('{{{chart}}}');
+
+            // can't have functions in json
+            settings.tooltip.formatter = function () {
+                return '<strong>'+this.point.name+'</strong>: $'
+                        +this.point.options.total;
+            };
+            // so the callbacks are here
+            settings.plotOptions.pie.dataLabels.formatter = function () {
+                return '<strong>'+this.point.name+'</strong>: '
+                        +parseFloat(this.percentage.toFixed(2))+'%';
+            }
+
+            // create the chart
+            var pieChart = new Highcharts.Chart(settings);
+        });
+    </script>
+    <div id="chart-pie">-->
+        <!-- the chart will be rendered here -->
+  <!--  </div>
+</section> -->
+
+<!-- you can have as many partials as you want -->
+<!-- {{>readme}}
+ -->

@@ -1,0 +1,519 @@
+{
+    "account": {
+        "slug": "account",
+        "table": {
+            "name": "account",
+            "pk": "account_id",
+            "verbose": "account"
+        },
+        "columns": [
+            {
+                "name": "account_id",
+                "verbose": "account_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": false
+                },
+                "editview": {
+                    "show": false
+                }
+            },
+            {
+                "name": "account_name",
+                "verbose": "Account name",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(50)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "account_password",
+                "verbose": "Password",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(100)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": false
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "person_id",
+                "verbose": "Person id",
+                "control": {
+                    "select": true
+                },
+                "type": "int(11)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                },
+                "oneToMany": {
+                    "table": "person",
+                    "pk": "person_id",
+                    "columns": [
+                        "person_id",
+                        "person_name"
+                    ]
+                }
+            },
+            {
+                "name": "role_id",
+                "verbose": "Role",
+                "control": {
+                    "select": true
+                },
+                "type": "int(11)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                },
+                "oneToMany": {
+                    "table": "role",
+                    "pk": "role_id",
+                    "columns": [
+                        "role_name"
+                    ]
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 10
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "migrations": {
+        "slug": "migrations",
+        "table": {
+            "name": "migrations",
+            "pk": "id",
+            "verbose": "migrations"
+        },
+        "columns": [
+            {
+                "name": "id",
+                "verbose": "id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": false
+                },
+                "editview": {
+                    "show": false
+                }
+            },
+            {
+                "name": "name",
+                "verbose": "name",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(255)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": false
+                },
+                "editview": {
+                    "show": false
+                }
+            },
+            {
+                "name": "run_on",
+                "verbose": "run_on",
+                "control": {
+                    "text": true
+                },
+                "type": "datetime",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": false
+                },
+                "editview": {
+                    "show": false
+                }
+            }
+        ],
+        "mainview": {
+            "show": false
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "person": {
+        "slug": "person",
+        "table": {
+            "name": "person",
+            "pk": "person_id",
+            "verbose": "person"
+        },
+        "columns": [
+            {
+                "name": "person_id",
+                "verbose": "person_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "person_name",
+                "verbose": "person_name",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(45)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "person_address",
+                "verbose": "person_address",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(100)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "person_cnic",
+                "verbose": "person_cnic",
+                "control": {
+                    "text": true
+                },
+                "type": "int(20)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "person_contact",
+                "verbose": "person_contact",
+                "control": {
+                    "text": true
+                },
+                "type": "int(20)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 10
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "role": {
+        "slug": "role",
+        "table": {
+            "name": "role",
+            "pk": "role_id",
+            "verbose": "role"
+        },
+        "columns": [
+            {
+                "name": "role_id",
+                "verbose": "role_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "role_name",
+                "verbose": "role_name",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(45)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "tracker": {
+        "slug": "tracker",
+        "table": {
+            "name": "tracker",
+            "pk": "tracker_id",
+            "verbose": "tracker"
+        },
+        "columns": [
+            {
+                "name": "tracker_id",
+                "verbose": "tracker_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": false
+                },
+                "editview": {
+                    "show": false
+                }
+            },
+            {
+                "name": "tracker_imei",
+                "verbose": "tracker_imei",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(100)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "purchasing_date",
+                "verbose": "purchasing_date",
+                "control": {
+                    "datetime": true
+                },
+                "type": "datetime",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "account_id",
+                "verbose": "account_name",
+                "control": {
+                    "select": true
+                },
+                "type": "int(11)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                },
+                "oneToMany": {
+                    "table": "account",
+                    "pk": "account_id",
+                    "columns": [
+                        "account_name"
+                    ]
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 10
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "tracker_data": {
+        "slug": "tracker_data",
+        "table": {
+            "name": "tracker_data",
+            "pk": "tracker_data_id",
+            "verbose": "tracker_data"
+        },
+        "columns": [
+            {
+                "name": "tracker_data_id",
+                "verbose": "tracker_data_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": false
+                },
+                "editview": {
+                    "show": false
+                }
+            },
+            {
+                "name": "tracker_data_location",
+                "verbose": "tracker_data_location",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(45)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "tracker_data_history",
+                "verbose": "tracker_data_history",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(45)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "tracker_id1",
+                "verbose": "tracker_imei",
+                "control": {
+                    "select": true
+                },
+                "type": "int(11)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                },
+                "oneToMany": {
+                    "table": "tracker",
+                    "pk": "tracker_id",
+                    "columns": [
+                        "tracker_imei"
+                    ]
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 10
+        },
+        "editview": {
+            "readonly": false
+        }
+    }
+}

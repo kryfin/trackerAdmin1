@@ -1,0 +1,159 @@
+
+
+<div style="margin-bottom: 40px;" >
+ <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/account">account</a></li>
+            
+            
+ <li>
+        </ul>
+
+</div>
+
+
+<style type="text/css">
+    .form-horizontal.well .control-group { margin: 0; }
+    #readme { float: none; margin: 0 auto; }
+</style>
+
+<!-- this library is loaded locally only for this view -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/highcharts/3.0.2/highcharts.js" type="text/javascript" charset="utf-8"></script>
+
+
+
+
+
+<!-- Le View -->
+<!-- <h2>Person Information</h2> -->
+
+    <div class="{{#text}}col-sm-3 col-md-2 col-lg-1{{/text}}{{#number}}col-sm-5 col-md-4 col-lg-3{{/number}}{{#date}}col-sm-5 col-md-4 col-lg-3{{/date}}{{#time}}col-sm-5 col-md-4 col-lg-3{{/time}}{{#datetime}}col-sm-5 col-md-4 col-lg-3{{/datetime}}{{#year}}col-sm-5 col-md-4 col-lg-3{{/year}}{{#select}}col-sm-5 col-md-4 col-lg-3{{/select}}{{#file}}col-sm-5 col-md-4 col-lg-3{{/file}}{{#radio}}col-sm-5 col-md-4 col-lg-3{{/radio}}{{#textarea}}{{#editor}}col-sm-9 col-md-9 col-lg-10{{/editor}}{{/textarea}}{{#textarea}}{{^editor}}col-sm-7 col-md-6 col-lg-5{{/editor}}{{/textarea}}">
+
+    <br/>     <br/>     <br/>     
+<form action="/view3/" method="post" accept-charset="utf-8" class="form-horizontal" role="form">
+<div class="form-group">
+    <label class="control-label col-sm-2" for="text">Person name:</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" name="p_name" id="text" placeholder="Enter name" pattern="[a-zA-Z\s]+" required>
+    </div>
+  </div>
+
+<div class="form-group">
+    <label class="control-label col-sm-2" for="text">Person Address:</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" name="p_address" id="text" placeholder="Enter Address">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="text">Person CNIC:</label>
+    <div class="col-sm-6">
+      <input type="number" class="form-control" name="p_cnic" id="text"   placeholder="Enter CNIC" pattern="0|[1-9]\d{0,2}" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="text">Person Contact:</label>
+    <div class="col-sm-6">
+      <input type="number" class="form-control" name="p_contact_number" id="text" placeholder="Enter Contact Number"   pattern="[1-9]" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="text">Account Name:</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" name="Account_Name" id="text" placeholder="Enter Account Name" value=" ">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="text">Account Password:</label>
+    <div class="col-sm-6">
+      <input type="password" class="form-control" name="Account_Password" id="text" value="">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="text">Role :</label>
+    <div class="col-sm-2">
+ <select name="r_name" class="form-control">
+                <!-- this is one way to have selected element in mustache -->
+                <option value="1">User</option>
+  <option value="2">Admin</option>
+  <option value="3">Technical staff</option>
+                </option>
+            </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="text">Tracker IMEI:</label>
+    <div class="col-sm-6">
+      <input type="number" class="form-control" name="tracker_imei" id="text" value="">
+    </div>
+  </div>
+
+
+
+<div class="container">
+   <label class="control-label col-sm-2" for="text">Purchase date:</label>
+    <div class="row">
+        <div class='col-sm-6'>
+            <input type='text' class="form-control" name="tracker_date" id='datetimepicker4' />
+        </div>
+        <script type="text/javascript" charset="utf-8">
+            $(function () {
+                $('#datetimepicker4').datetimepicker();
+            });
+        </script>
+    </div>
+</div>
+
+
+
+ <!--         <input type="text" name="p_name" class="form-control"/><br>
+  -->
+ 
+        <input type="submit" value="save" class="btn btn-primary"/>
+   <input type="hidden" name="_csrf" value="{{csrf}}" />
+
+
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+<!-- <section id="chart">
+    <script type="text/javascript" charset="utf-8">
+        $(function () {
+            // {{{chart data is unescaped}}}
+            var settings = JSON.parse('{{{chart}}}');
+
+            // can't have functions in json
+            settings.tooltip.formatter = function () {
+                return '<strong>'+this.point.name+'</strong>: $'
+                        +this.point.options.total;
+            };
+            // so the callbacks are here
+            settings.plotOptions.pie.dataLabels.formatter = function () {
+                return '<strong>'+this.point.name+'</strong>: '
+                        +parseFloat(this.percentage.toFixed(2))+'%';
+            }
+
+            // create the chart
+            var pieChart = new Highcharts.Chart(settings);
+        });
+    </script>
+    <div id="chart-pie">-->
+        <!-- the chart will be rendered here -->
+  <!--  </div>
+</section> -->
+
+<!-- you can have as many partials as you want -->
+<!-- {{>readme}}
+ -->
